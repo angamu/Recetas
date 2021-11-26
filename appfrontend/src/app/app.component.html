@@ -1,0 +1,49 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<header class="header">
+    <div class="container">
+        <div class="row">            
+            <div class="col-md-6">
+                <div class="logo">
+                    <img src="https://raw.githubusercontent.com/angamu/recursos/main/logo.png">
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <div class="buttons-header">
+                    <button class="btn btn-default" (click)="iniciarSesion()">Iniciar sesión</button>
+                    <button class="btn btn-default" (click)="registroUsuario()">Registrarse</button>
+                </div>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col-md-6">&nbsp;</div>       
+            <div class="col-md-6">
+                <div *ngIf="panelLogin">
+                    <app-login></app-login>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="details-card">
+    <div class="container">
+        <div class="row">  
+            <div class="col-md-4" *ngFor="let item of recetas | keyvalue">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{item.value.imagen}}" alt="">
+                        <span><h4>{{item.value.titulo}}</h4></span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>{{item.value.notas}}</h3>
+                        <p>{{item.value.descripcion}}</p>
+                        <a href="#" class="btn-card">Leer más</a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
