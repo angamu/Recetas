@@ -14,6 +14,7 @@ export class AppComponent implements OnInit  {
   recetas: Array<any> = [];
   panelLogin=false;
   panelRegistro=false;
+  recetasHome=true;
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(){
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit  {
   }
 
   iniciarSesion(){
+    this.panelRegistro=false;
     if (this.panelLogin) {
       this.panelLogin=false;  
     } else {
@@ -43,6 +45,7 @@ export class AppComponent implements OnInit  {
   }
 
   registroUsuario(){
+    this.panelLogin=false;
     if (this.panelRegistro) {
       this.panelRegistro=false;  
     } else {

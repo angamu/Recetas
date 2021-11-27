@@ -1,7 +1,14 @@
 <div class="card">
-    <div class="card-header">Inicio de sesión</div>
+    <div class="card-header">Registro de usuarios</div>
     <div class="card-body">
         <form>
+            <div class="form-group row">
+                <label for="email_address" class="col-md-4 col-form-label text-md-right">Nombre completo</label>
+                <div class="col-md-6">
+                    <input type="text" [(ngModel)]="nombre" name="nombre" class="form-control" required autofocus>
+                </div>
+            </div>
+
             <div class="form-group row">
                 <label for="email_address" class="col-md-4 col-form-label text-md-right">Correo electrónico</label>
                 <div class="col-md-6">
@@ -16,10 +23,10 @@
                 </div>
             </div>
             <div class="col-md-6 offset-md-4">
-                <button type="submit" class="btn btn-primary" (click)="ingresarApp()">
+                <button type="submit" class="btn btn-primary" (click)="registrarUser()">
                     Aceptar
                 </button>
-                <div class="msg-inicio" *ngIf="msgInicioErr">Email o contraseña no valido.</div>
+                <div class="msg-registro" *ngIf="msgRegistro">Usuario registrado con éxito.</div>
             </div>
         </form>
     </div>
