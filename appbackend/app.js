@@ -14,21 +14,59 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}) );
 
 let lstRecetas;
-fs.readFile('recetario.json', 'utf8', function (err, data) {
-  if (err) throw err;
-  lstRecetas = data;
+let lstUsuarios;
+const dbRecetas = 'recetario.json';
+const dbUsuarios = 'dbusuarios.json';
+
+//cargar listado de recetas del json
+fs.exists(dbRecetas, function(exists){
+    if(exists){
+        fs.readFile(dbRecetas, 'utf8', function (err, data) {
+            if (err) throw err;
+            lstRecetas = data;
+        });
+    }
+});
+//cargar listado de usuarios del json
+fs.exists(dbUsuarios, function(exists){
+    if(exists){
+        fs.readFile(dbUsuarios, 'utf8', function (err, data) {
+            if (err) throw err;
+            lstUsuarios = data;
+        });
+    }
 });
 
 //home - recetas
 app.route('/api/recetas').get((req, res) => {
     res.send(JSON.parse(lstRecetas));
 });
-
+//validar inicio de sesion
 app.route('/api/login').post((req, res) => {
-    var data = req;
-    console.log(req.body);
-    console.log("llego node!");
-    res.send("Ok");
+    let data = req;
+    let arrUsuarios = JSON.parse(lstUsuarios);
+    let existeUser =  Object.values(arrUsuarios).filter((user => user.email === req.body.user) && (user => user.contrasena === req.body.pass));
+    if (existeUser.length > 0){
+        res.send("valido");
+    } else {
+        res.send("erroruser");
+    }
+});
+//registro de usuarios
+app.route('/api/registro').post((req, res) => {
+    let data = req;
+    let arrUsuarios = JSON.parse(lstUsuarios);
+    let existeUser =  Object.values(arrUsuarios).filter(user => user.email === req.body.user);
+    if (existeUser.length == 0){
+        arrUsuarios.push({"nombre":req.body.datau,"email":req.body.user,"contrasena":req.body.pass});
+        var filejson = JSON.stringify(arrUsuarios); 
+        fs.writeFile(dbUsuarios, filejson, function(err, result) {
+            if(err) console.log('error', err);
+        });
+        res.send("registrado");
+    } else {
+        res.send("existe");
+    }
 });
 
 app.listen(8080, function () {
