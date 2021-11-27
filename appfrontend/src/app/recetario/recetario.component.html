@@ -1,0 +1,36 @@
+<section class="details-card">
+    <div class="container">
+        <div class="title">Mis recetas</div>
+        <div class="row">  
+            <div class="col-md-12 buscar-receta text-right">
+                <input [(ngModel)]="textobuscar" name="textobuscar" class="span5" type="text"  placeholder="Ingrese la palabra">
+                <button type="button" class="btn btn-primary" (click)="buscarReceta()">Buscar</button>
+                <div class="nueva-receta">
+                    <button type="button" class="btn" (click)="nuevaReceta()">Crear nueva</button>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="panelNueva">
+            <div class="row">
+                <div class="col-md-6 offset-md-4">
+                    <app-receta></app-receta>
+                </div>
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col-md-4" *ngFor="let item of recetas | keyvalue">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img src="{{item.value.imagen}}" alt="">
+                        <span><h4>{{item.value.titulo}}</h4></span>
+                    </div>
+                    <div class="card-desc">
+                        <h3>{{item.value.notas}}</h3>
+                        <p>{{item.value.descripcion}}</p>
+                        <a href="#" class="btn-card">Leer más</a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

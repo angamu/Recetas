@@ -2,9 +2,13 @@
     background-color: #4C2B0D;
     color: #fff;
     padding: 0.275rem 0.65rem;
+    margin-left: 0.15rem;
 }
 .buttons-header button:last-child {
     margin-left: 0.65rem;
+    color: #4c2b0d;
+    background: none;
+    font-weight: bold;
 }
 header.header {
     padding: 1.25rem 0;

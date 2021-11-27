@@ -68,6 +68,20 @@ app.route('/api/registro').post((req, res) => {
         res.send("existe");
     }
 });
+//registro de recetas
+app.route('/api/nuevareceta').post((req, res) => {
+    let data = req;
+    let arrRecetas = JSON.parse(lstRecetas);
+    arrRecetas.push({"titulo":req.body.nombre,"descripcion":req.body.descripcion,"imagen":req.body.imagen,"preparacion":req.body.preparacion,"ingredientes":req.body.ingredientes,"notas":req.body.notas});
+    var filejson = JSON.stringify(arrRecetas); 
+    fs.writeFile(dbRecetas, filejson, function(err, result) {
+        if(err) console.log('error', err);
+    });
+    res.send("registrada");
+});
+app.route('/api/misrecetas').get((req, res) => {
+    res.send(JSON.parse(lstRecetas));
+});
 
 app.listen(8080, function () {
     console.log('Server started!');

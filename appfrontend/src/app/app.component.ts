@@ -14,7 +14,8 @@ export class AppComponent implements OnInit  {
   recetas: Array<any> = [];
   panelLogin=false;
   panelRegistro=false;
-  recetasHome=true;
+  panelHome=true;
+  panelRecetario=false;
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(){
@@ -51,6 +52,13 @@ export class AppComponent implements OnInit  {
     } else {
       this.panelRegistro=true;  
     }
+  }
+  
+  vwRecetario(){
+    this.panelLogin=false;
+    this.panelRegistro=false;
+    this.panelHome=false;
+    this.panelRecetario=true;
   }
 
 }

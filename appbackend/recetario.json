@@ -1,46 +1,54 @@
 [
     {
-        "titulo":"Sancocho",
-        "descripcion":"El sancocho es un caldo espeso o sopa a base de tubérculos como la papa que tiene un alto indice de calorias y grasa",
-        "imagen":"https://cocinandoconerica.com/wp-content/uploads/2021/04/Sancocho-de-Pescado.jpg",
-        "preparacion":"Se pone a hervir el agua con el pollo o la gallina se le agrega el plátano y la yuca y el cubito de gallina cuando ya este el pollo se le agrega la papa y los demás ingredientes. Todos los ingredientes deben estar unos 20 minutos hiriviendo. El Sancocho es un plato fácil de hacer, vas a tardar más tiempo en recopilar todos los ingredientes que en hacerlo.",
-        "ingredientes":[
-            "unidad de Pollo",
-            "4 unidades de Papas",
-            "2 unidades de Platanos verdes",
-            "1 unidad de Yuca",
-            "1 unidad de Cebolla y cilantro"
-        ],
-        "notas":"Sancocho Colombiano"
+       "titulo":"Sancocho",
+       "descripcion":"El sancocho es un caldo espeso o sopa a base de tubérculos como la papa que tiene un alto indice de calorias y grasa",
+       "imagen":"https://cocinandoconerica.com/wp-content/uploads/2021/04/Sancocho-de-Pescado.jpg",
+       "preparacion":"Se pone a hervir el agua con el pollo o la gallina se le agrega el plátano y la yuca y el cubito de gallina cuando ya este el pollo se le agrega la papa y los demás ingredientes. Todos los ingredientes deben estar unos 20 minutos hiriviendo. El Sancocho es un plato fácil de hacer, vas a tardar más tiempo en recopilar todos los ingredientes que en hacerlo.",
+       "ingredientes":[
+          "unidad de Pollo",
+          "4 unidades de Papas",
+          "2 unidades de Platanos verdes",
+          "1 unidad de Yuca",
+          "1 unidad de Cebolla y cilantro"
+       ],
+       "notas":"Sancocho Colombiano"
     },
     {
-        "titulo":"Torta de chocolate",
-        "descripcion":"Una torta de chocolate esponjosa, húmeda y fácil.",
-        "imagen":"https://t1.rg.ltmcdn.com/es/images/2/5/2/img_torta_de_chocolate_casera_45252_600_square.jpg",
-        "preparacion":"Coge un recipiente grande y tamiza la harina junto con la cocoa, el bicarbonato y el polvo de hornear. Añade dos tazas de azúcar, la sal y la canela y mezcla bien. Separa las claras de las yemas de huevo e introduce a la mezcla anterior el aceite y la leche y mezcla bien. ierte la masa del bizcocho húmedo de chocolate en un molde para horno previamente enharinado y enmantecado y lo hornea a 180 ºC ",
-        "ingredientes":[
-            "3 tazas de harina",
-            "3 tazas de azúcar",
-            "2½ cucharaditas de bicarbonato",
-            "1 cucharadita de polvos de hornear",
-            "1½ tazas de cocoa o cacao en polvo"
-        ],
-        "notas":"Perfecta para una taza de Café"
+       "titulo":"Torta de chocolate",
+       "descripcion":"Una torta de chocolate esponjosa, húmeda y fácil.",
+       "imagen":"https://t1.rg.ltmcdn.com/es/images/2/5/2/img_torta_de_chocolate_casera_45252_600_square.jpg",
+       "preparacion":"Coge un recipiente grande y tamiza la harina junto con la cocoa, el bicarbonato y el polvo de hornear. Añade dos tazas de azúcar, la sal y la canela y mezcla bien. Separa las claras de las yemas de huevo e introduce a la mezcla anterior el aceite y la leche y mezcla bien. ierte la masa del bizcocho húmedo de chocolate en un molde para horno previamente enharinado y enmantecado y lo hornea a 180 ºC ",
+       "ingredientes":[
+          "3 tazas de harina",
+          "3 tazas de azúcar",
+          "2½ cucharaditas de bicarbonato",
+          "1 cucharadita de polvos de hornear",
+          "1½ tazas de cocoa o cacao en polvo"
+       ],
+       "notas":"Perfecta para una taza de Café"
     },
     {
-        "titulo":"Ajiaco",
-        "descripcion":"Consiste en una sopa de pollo que contiene diferentes tipos de papa y se puede servir sola o con crema de leche.",
-        "imagen":"https://cdn.bolivia.com/gastronomia/2011/07/22/ajiaco-1458.jpg",
-        "preparacion":"En una olla con las 6 tazas de agua, disuelve el sobre de caldo de gallina, llévala a fuego medio y revuelve constantemente, añade a la olla: la mazorca, la pechuga de pollo con hueso y las papas. Cocina a fuego alto por 20 minutos o hasta que la papa y la pechuga estén cocinadas. Retira de la olla la pechuga de pollo y déjala enfriar un poco para desmecharla. Una vez hayas desmechado el pollo, agrega a la olla las guascas y déjalas cocinar por 5 minutos.",
-        "ingredientes":[
-            "4 tazas de agua",
-            "1 pechuga de pollo",
-            "¼ de libra de papa criolla",
-            "¼ de libra de papa pastusa",
-            "3 mazorcas",
-            "Crema de leche",
-            "Alcaparras"
-        ],
-        "notas":"Ajiaco Santafereño"
+       "titulo":"Ajiaco",
+       "descripcion":"Consiste en una sopa de pollo que contiene diferentes tipos de papa y se puede servir sola o con crema de leche.",
+       "imagen":"https://cdn.bolivia.com/gastronomia/2011/07/22/ajiaco-1458.jpg",
+       "preparacion":"En una olla con las 6 tazas de agua, disuelve el sobre de caldo de gallina, llévala a fuego medio y revuelve constantemente, añade a la olla: la mazorca, la pechuga de pollo con hueso y las papas. Cocina a fuego alto por 20 minutos o hasta que la papa y la pechuga estén cocinadas. Retira de la olla la pechuga de pollo y déjala enfriar un poco para desmecharla. Una vez hayas desmechado el pollo, agrega a la olla las guascas y déjalas cocinar por 5 minutos.",
+       "ingredientes":[
+          "4 tazas de agua",
+          "1 pechuga de pollo",
+          "¼ de libra de papa criolla",
+          "¼ de libra de papa pastusa",
+          "3 mazorcas",
+          "Crema de leche",
+          "Alcaparras"
+       ],
+       "notas":"Ajiaco Santafereño"
+    },
+    {
+       "titulo":"Espaguetis con Pollo",
+       "descripcion":"Espaguetis enteros con pollo desmechado y rica salsa blanca.",
+       "imagen":"https://simplementerecetas.com/wp-content/uploads/2020/06/Espaguetis-con-pollo.jpg",
+       "preparacion":"Ponemos a hervir las pastas en una olla con agua caliente, sal y aceite.\nAparte, en un sartén mezclamos la Crema de Leche Alquería, la mayonesa y calentamos hasta hervir con sal y pimienta al gusto.\n\n",
+       "ingredientes":"200 g Crema de Leche Alquería\n500 g espaguetis\n1 pechuga\nMaíz tierno\nMayonesa\nSal y pimienta",
+       "notas":"Sencillo pero rico"
     }
-]
+ ]
